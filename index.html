@@ -44,7 +44,9 @@
 
 <BODY>
 
-    <canvas id="pinkboard"></canvas>
+    <canvas id="pinkboard" style="position: relative;">
+    </canvas>
+    <h1 style="color: red; position: absolute; z-index: 1000000000000;left: 49%; top: 45%;">TĐ</h1>
 
     <script>
 
@@ -419,7 +421,7 @@
 
                 // create the fill
 
-                context.fillStyle = '#ea80b0';
+                context.fillStyle = 'red';
 
                 context.fill();
 
@@ -512,11 +514,18 @@
             }, 10);
 
         })(document.getElementById('pinkboard'));
-
+        
+            
+    
     </script>
-    <audio preload="auto" autoplay loop>
+    <audio id = "nhac" loop preload="auto" autoplay>
         <source src="./sound/sound_nhac.mp3">
     </audio>
+    <script>
+        var audio = document.getElementById("nhac");
+        console.log(audio);
+        audio.play();
+    </script>
 </BODY>
 
 </HTML>
