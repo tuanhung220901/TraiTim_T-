@@ -1,0 +1,10 @@
+.TD{
+    color: #fff; position: absolute; z-index: 1000000000000;left: 46%; top: 45%; font-family: 'Great Vibes', cursive;
+
+}
+@media screen and (max-width: 1200px) {
+   .TD{
+    left: 43%;
+    top: 46%;
+   } 
+}
